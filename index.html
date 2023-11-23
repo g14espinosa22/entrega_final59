@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>RG Logistica</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">INICIO </a>
+      <a href="#about">ACERCA</a>
+      <a href="#service">SERVICIOS </a>
+      <a href="#vehicles">NUESTROS VEHICULOS</a>
+      <a href="#testimonial">TESTIMONIOS CLIENTES</a>
+      <a href="#contact">CONTACTO</a>
+   </div>
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-4 col-sm-4">
+                  <div class="logo">
+                     <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                  </div>
+               </div>
+               <div class="col-md-8 col-sm-8">
+                  <div class="right_bottun">
+                     <ul class="conat_info d_none ">
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                     </ul>
+                     <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#" /> </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- banner -->
+   <section class="banner_main">
+      <div id="banner1" class="carousel slide banner_slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#banner1" data-slide-to="0" class="active"></li>
+            <li data-target="#banner1" data-slide-to="1"></li>
+            <li data-target="#banner1" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container-fluid">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-7 col-lg-5">
+                           <div class="text-bg">
+                              <h1>El Mejor Servicio del Pais</h1>
+                              <span>En RG Logistica, sabemos que es necesario cumplir con los tiempos de entrega
+                                 previstos para preservar la confianza y credibilidad de los clientes</span>
+                              <a class="read_more" href="#">Leer mas</a>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-lg-7">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="ban_track">
+                                    <figure><img src="images/track.png" alt="#" /></figure>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <form class="transfot">
+                                    <div class="col-md-12">
+                                       <span>Servicio Profesional</span>
+                                       <h3>Cotiza tu ENVIO</h3>
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Origen" type="text" name="Location">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Destino" type="text"
+                                          name="To destination">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Correo" type="text" name="Email">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Numero Contacto" type="text"
+                                          name="Contact Number">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <button class="get_now">COTIZAR</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container-fluid">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-7 col-lg-5">
+                           <div class="text-bg">
+                              <h1>El mejor Servicio del Pais</h1>
+                              <span>Cada persona es única, al igual que su motivo y encomienda. Por eso en RG Logistica
+                                 ofrecemos diferentes servicios que le proporcionan al usuario soluciones
+                                 personalizadas.</span>
+                              <a class="read_more" href="#">Leer mas</a>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-lg-7">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="ban_track">
+                                    <figure><img src="images/track.png" alt="#" /></figure>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <form class="transfot">
+                                    <div class="col-md-12">
+                                       <span>Servicio Profesional</span>
+                                       <h3>Cotiza tu ENVIO</h3>
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Origen" type="text" name="Location">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="destino" type="text"
+                                          name="To destination">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Correo" type="text" name="Email">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Numero Contacto" type="text"
+                                          name="Contact Number">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <button class="get_now">COTIZAR<Get Now quote</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container-fluid">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-7 col-lg-5">
+                           <div class="text-bg">
+                              <h1>El Mejor servicio del Pais</h1>
+                              <span>En RG Logistica, nos gusta verlos crecer y alcanzar sus objetivos. Por este motivo
+                                 nos complace trabajar a su lado desde esta primer etapa, con el compromiso de
+                                 brindarles un servicio seguro y responsable.</span>
+                              <a class="read_more" href="#">Leer mas</a>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-lg-7">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="ban_track">
+                                    <figure><img src="images/track.png" alt="#" /></figure>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <form class="transfot">
+                                    <div class="col-md-12">
+                                       <span>Servicio Profesional</span>
+                                       <h3>Cotiza tu ENVIO</h3>
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Origen" type="text" name="Location">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Destino" type="text"
+                                          name="To destination">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Correo" type="text" name="Email">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <input class="transfot_form" placeholder="Numero Contacto" type="text"
+                                          name="Contact Number">
+                                    </div>
+                                    <div class="col-md-12">
+                                       <button class="get_now">COTIZAR</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+         </a>
+         <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+         </a>
+      </div>
+   </section>
+   <!-- end banner -->
+   <!-- about section -->
+   <div id="about" class="about ">
+      <div class="container">
+         <div class="row d_flex">
+            <div class="col-md-6">
+               <div class="about_right">
+                  <figure><img src="images/about.png" alt="#" /></figure>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="titlepage">
+                  <h2>Sobre Nosotros</h2>
+                  <p> Desarrollamos soluciones logísticas enfocadas en diferentes mercados, asegurando la calidad de tu
+                     negocio.
+                     Estamos, presente en todos los puntos estrategicos de la Argentina
+                  </p>
+                  <a class="read_more" href="#">Leer mas...</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- about section -->
+   <!-- service section -->
+   <div id="service" class="service">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-10 offset-md-1">
+               <div class="titlepage">
+                  <h2>Nuestros Servicios</h2>
+                  <p>Nos adaptamos a todas las necesidades de nuestros clientes, ofreciendo las mejores solucion en
+                     logistica, sin importar el tipo de cargo o punto destino. </p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="service_main">
+                  <div class="service_box blu_colo">
+                     <i><img src="images/ser1.png" alt="#" /></i>
+                     <h4>CARGA AEREA</h4>
+                  </div>
+                  <div class="service_box yelldark_colo">
+                     <i><img src="images/ser2.png" alt="#" /></i>
+                     <h4>BUQUE CARGA</h4>
+                  </div>
+                  <div class="service_box yell_colo">
+                     <i><img src="images/ser3.png" alt="#" /></i>
+                     <h4> SERVICIO COURIER</h4>
+                  </div>
+                  <div class="service_box yelldark_colo">
+                     <i><img src="images/ser4.png" alt="#" /></i>
+                     <h4>EMBALAJES ESPECIALES</h4>
+                  </div>
+                  <div class="service_box yell_colo">
+                     <i><img src="images/ser5.png" alt="#" /></i>
+                     <h4>CARGAS 100% ASEGURADAS</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <a class="read_more" href="#">Leer mas...</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end service section -->
+   <!-- vehicles section -->
+   <section id="vehicles" class="vehicles">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Nuestra Flota de Transporte</h2>
+                  <p>Poseemos la flota mas actualizada del mercado, garantizando el mejor servicio</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="veh" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#veh" data-slide-to="0" class="active"></li>
+            <li data-target="#veh" data-slide-to="1"></li>
+            <li data-target="#veh" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="vehicles_truck">
+                              <figure><img src="images/truc1.png" alt="#" /></figure>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="vehicles_truck">
+                              <figure><img src="images/truc2.png" alt="#" /></figure>
+                           </div>
+                           <h3 class="blac_co">Camiones</h3>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="vehicles_truck">
+                              <figure><img src="images/truc3.png" alt="#" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="vehicles_truck">
+                              <figure><img src="images/truc1.png" alt="#" /></figure>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="vehicles_truck">
+                              <figure><img src="images/truc2.png" alt="#" /></figure>
+                           </div>
+                           <h3 class="blac_co">Camiones 2</h3>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="vehicles_truck">
+                              <figure><img src="images/truc3.png" alt="#" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="vehicles_truck">
+                              <figure><img src="images/truc1.png" alt="#" /></figure>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="vehicles_truck">
+                              <figure><img src="images/truc2.png" alt="#" /></figure>
+                           </div>
+                           <h3 class="blac_co">Camiones 3</h3>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="vehicles_truck">
+                              <figure><img src="images/truc3.png" alt="#" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#veh" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+         </a>
+         <a class="carousel-control-next" href="#veh" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+         </a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <a class="read_more" href="#">Leer mas...</a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end vehicles section -->
+   <!-- testimonial section -->
+   <div id="testimonial" class="testimonial bottom_cross bottom_cross2">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Nuestros clientes dicen</h2>
+                  <p>Las mejores reseñas y puntajes, en todas las plataformas de E-Commerce</p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="container">
+                           <div class="carousel-caption ">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="testimonial_box">
+                                       <figure><img src="images/our.png" alt="#" /></figure>
+                                       <h3>Luda Johnson <br><span class="kisu"></span></h3>
+                                       <p>Mi envio, llego en tiempo record y en excelentes condiciones. Recomendados.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="testimonial_box">
+                                       <figure><img src="images/our.png" alt="#" /></figure>
+                                       <h3>Luda Johnson 2<br><span class="kisu"></span></h3>
+                                       <p>Tenia una carga especial, la cual se encargaron de gestionar, todos los
+                                          permisos necesarios, para su despacho.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="full cross_layout">
+                                       <div class="testimonial_box">
+                                          <figure><img src="images/our.png" alt="#" /></figure>
+                                          <h3>Luda Johnson 3<br><span class="kisu"></span></h3>
+                                          <p>Segui mi envio en todo tiempo, utilizando su sistema de track, genial!</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <i class="fa fa-caret-left" aria-hidden="true"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <a class="read_more" href="#">Leer mas...</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end testimonial section -->
+   <!-- choose section -->
+   <div class="choose">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Por que Elegirnos</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-5">
+               <div class="choose_box">
+                  <i><img src="images/why1.png" alt="#" /></i>
+                  <h3>Nuestra Vision con el cliente </h3>
+                  <p>Sea lo que sea que tengas que enviar nosotros podemos encargarnos. Entendemos la importancia o el
+                     valor afectivo que pueden tener tus envíos. Ofrecemos un servicio personalizado, confiable y
+                     seguro, mediante una extensa red a lo largo de todo el país.</p>
+                  <a class="read_more" href="#">Leer mas...</a>
+               </div>
+            </div>
+            <div class="col-md-5 offset-md-2">
+               <div class="choose_box">
+                  <i><img src="images/why2.png" alt="#" /></i>
+                  <h3>Entregas con Compromiso</h3>
+                  <p>Sabemos lo que significa comprometerse con los clientes y el valor de cumplir. Por eso brindamos un
+                     servicio corporativo con una amplia gama de soluciones logísticas de acuerdo a las necesidades y
+                     características particulares de cada una.</p>
+                  <a class="read_more" href="#">Leer mas...</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end choose section -->
+    <!-- videos -->
+   <div class="choose">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Videos Demostrativos</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-5">
+               <div class="choose_box">
+                  <div class="video-responsive">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/l5djXZcO85Q?si=XiLWNdcRwV1v1HZx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-5 offset-md-2">
+               <div class="choose_box">
+                  <div class="video-responsive">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/eKbTH-QxrAk?si=sval8x23C4lvQOHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+                  </div>          
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+    <!-- videos -->
+   <!-- contact section -->
+   <div id="contact" class="contact">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Dejanos tu consulta</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="con_bg">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-5">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Nombre/Apellido" type="type" name="Name">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Correo Electronico" type="type" name="Email">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Numero Telefonico" type="type" name="Phone Number">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactusmess" placeholder="Escriba su mensaje" type="type" Message="Name">
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Enviar</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="col-md-7">
+                  <div class="co_tru">
+                     <figure><img src="images/truc4.png" alt="#" /></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end contact section -->
+   <!--  footer -->
+   <footer>
+      <div class="footer bottom_cross1">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <ul class="location_icon">
+                     <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Direccion: Reconquista 59
+                        <br> Rio Gallegos <br> Santa Cruz
+                     </li>
+                     <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a> Celular: +(549) 2966123456</li>
+                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Email: gespinosa@gmail.com
+                     </li>
+                  </ul>
+                  <form class="bottom_form">
+                     <h3>Novedades - Noticias</h3>
+                     <input class="enter" placeholder="Ingresa tu Correo" type="text" name="Enter your email">
+                     <button class="sub_btn">subscribete</button>
+                  </form>
+               </div>
+               <div class="col-md-8">
+                  <div class="map">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.1866814529712!2d-69.2434421!3d-51.619789399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb6fc07a19125c9%3A0x1156e23043e10e34!2sReconquista%2059%2C%20Z9400%20R%C3%ADo%20Gallegos%2C%20Santa%20Cruz!5e0!3m2!1ses-419!2sar!4v1700608492817!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>© 2023 - Espinosa Gaston - BA MULTIPLICA 2.0<a href="https://html.design/"></a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <script>
+      function openNav() {
+         document.getElementById("mySidepanel").style.width = "250px";
+      }
+
+      function closeNav() {
+         document.getElementById("mySidepanel").style.width = "0";
+      }
+   </script>
+</body>
+
+</html>
